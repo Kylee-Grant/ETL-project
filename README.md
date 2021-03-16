@@ -2,17 +2,20 @@
 ## Team members: Kylee Grant, Yifei Cao
 
 ## Data Set Overview
+Two datasets were used for this project Disney Plus Movies/TV Shows dataset and the IMDb Movies Extensive dataset.
+
 ### 1. Disney Plus Movies/TV Shows dataset: (https://www.kaggle.com/unanimad/disney-plus-shows)
 
-    Dataset Metadata: 
-        * Sources: http://www.omdbapi.com/ and https://flixable.com/
-        * Collection methodology: Python with omdbapi
-        * Dataset owner: Raphael Fontes
-        * Date created: 2020-04-14
-        * Last updated: 2020-05-16
-        * Current version: Version 3
+#### Dataset Metadata: 
+* Sources: http://www.omdbapi.com/ and https://flixable.com/
+* Collection methodology: Python with omdbapi
+* Dataset owner: Raphael Fontes
+* Date created: 2020-04-14
+* Last updated: 2020-05-16
+* Current version: Version 3
 
-Data Columns Summary:
+#### Data Columns Summary.
+Below is a list and an explanation of all the columns selected from the Disney Plus Movies/TV Shows dataset: 
 * imdb_id: unique Internet Movie Database id for each show
 * title: title of each show. These titles are not unique. There may be duplicate titles with different imdb_ids and released_at dates.
 * type: the type of each record: movie, series, or episode.
@@ -26,17 +29,16 @@ Data Columns Summary:
 
 ### 2. IMDb Movies Extensive dataset: (https://www.kaggle.com/stefanoleone992/imdb-extensive-dataset/discussion/201079).
 
-Dataset Metadata:
-Sources: https://www.imdb.com
-Collection methodology: Python script 
-Dataset owner: Stefano Leone
-Date created: 2019-11-24
-Last updated: 2020-09-14
-Current version: Version 2
+#### Dataset Metadata:
+* Sources: https://www.imdb.com
+* Collection methodology: Python script 
+* Dataset owner: Stefano Leone
+* Date created: 2019-11-24
+* Last updated: 2020-09-14
+* Current version: Version 2
 
-Data Columns Overview:
-
-
+#### Data Columns Summary:
+Below is a list and an explanation of all the columns selected from the IMDb Movies Extensive dataset: 
 
 
 # Guidelines for ETL Project
