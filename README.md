@@ -4,13 +4,13 @@
 ## Data Set Overview
 ### 1. Disney Plus Movies/TV Shows dataset: (https://www.kaggle.com/unanimad/disney-plus-shows)
 
-Dataset Metadata: 
-* Sources: http://www.omdbapi.com/ and https://flixable.com/
-* Collection methodology: Python with omdbapi
-* Dataset owner: Raphael Fontes
-* Date created: 2020-04-14
-* Last updated: 2020-05-16
-* Current version: Version 3
+    Dataset Metadata: 
+        * Sources: http://www.omdbapi.com/ and https://flixable.com/
+        * Collection methodology: Python with omdbapi
+        * Dataset owner: Raphael Fontes
+        * Date created: 2020-04-14
+        * Last updated: 2020-05-16
+        * Current version: Version 3
 
 Data Columns Summary:
 * imdb_id: unique Internet Movie Database id for each show
