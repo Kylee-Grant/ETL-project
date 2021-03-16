@@ -1,3 +1,45 @@
+# ETL Project
+## Team members: Kylee Grant, Yifei Cao
+
+## Data Set Overview
+Disney Plus Movies/TV Shows dataset: (https://www.kaggle.com/unanimad/disney-plus-shows)
+
+Dataset Metadata: 
+* Sources: http://www.omdbapi.com/ and https://flixable.com/
+* Collection methodology: Python with omdbapi
+* Dataset owner: Raphael Fontes
+* Date created: 2020-04-14
+* Last updated: 2020-05-16
+* Current version: Version 3
+
+Data Columns Summary:
+* imdb_id: unique Internet Movie Database id for each show
+* title: title of each show. These titles are not unique. There may be duplicate titles with different imdb_ids and released_at dates.
+* type: the type of each record: movie, series, or episode.
+* rated: the Motion Picture Association (MPA) film rating  for each show. The ratings are the following for each type:
+    * Movies: Approved, G, N/A, Not Rated, Passed, PG, PG-13, TV-14, TV-G, TV-PG, TV-Y7, TV-Y7-FV, Unrated)
+    * Series:  G, N/A, TV-14, TV-G, TV-PG, TV-Y, TV-Y7, TV-Y7-FV
+    * Episode: N/A, Not Rated, TV-G, TV-PG, Unrated.
+* released_at: the date the show was released.  This column was an object that was converted to date_time DD MMM YYYY. 
+* imdb_rating: Internet Movie Database rate
+* imdb_votes: Internet Movie Database votes
+
+IMDb Movies Extensive dataset:
+(https://www.kaggle.com/stefanoleone992/imdb-extensive-dataset/discussion/201079).
+
+Dataset Metadata:
+Sources: https://www.imdb.com
+Collection methodology: Python script 
+Dataset owner: Stefano Leone
+Date created: 2019-11-24
+Last updated: 2020-09-14
+Current version: Version 2
+
+Data Columns Overview:
+
+
+
+
 # Guidelines for ETL Project
 
 This document contains guidelines, requirements, and suggestions for Project 1.
