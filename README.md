@@ -2,7 +2,7 @@
 ## Team members: Kylee Grant, Yifei Cao
 
 ## Data Set Overview
-Disney Plus Movies/TV Shows dataset: (https://www.kaggle.com/unanimad/disney-plus-shows)
+### 1. Disney Plus Movies/TV Shows dataset: (https://www.kaggle.com/unanimad/disney-plus-shows)
 
 Dataset Metadata: 
 * Sources: http://www.omdbapi.com/ and https://flixable.com/
@@ -24,8 +24,7 @@ Data Columns Summary:
 * imdb_rating: Internet Movie Database rate
 * imdb_votes: Internet Movie Database votes
 
-IMDb Movies Extensive dataset:
-(https://www.kaggle.com/stefanoleone992/imdb-extensive-dataset/discussion/201079).
+### 2. IMDb Movies Extensive dataset: (https://www.kaggle.com/stefanoleone992/imdb-extensive-dataset/discussion/201079).
 
 Dataset Metadata:
 Sources: https://www.imdb.com
