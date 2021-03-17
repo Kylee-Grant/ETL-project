@@ -104,7 +104,6 @@ Postgres database was used for this project. Python with SQLAlchemy was used to 
 
 
 The variables from the disney table were joined with the variables in the imdb table using the imdb_id index.
-![Disney Db](Images/disneydb.png?raw=true "Disney Db")
  
 ## Final Tables or Collections
 In working with this database, the user may encounter a few issues that warrant attention. These are divided into sections based on their respective table below. 
