@@ -100,5 +100,6 @@ Postgres database was used for this project. Python with SQLAlchemy was used to 
 * released_at DATE,
 * disney_imdb_rating INT,
 * disney_imdb_votes INT
+![Disney Db](Images/disneydb.png?raw=true "Disney Db")
 
 ## Final Tables or Collections
