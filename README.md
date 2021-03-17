@@ -54,10 +54,10 @@ Below is a list and an explanation of all the columns selected from the IMDb Mov
 * votes_3: number of votes for the show with a rating equal to 3. Data Type: integer. 
 * votes_2: number of votes for the show with a rating equal to 2. Data Type: integer. 
 * votes_1: number of votes for the show with a rating equal to 1. Data Type: integer. 
-* us_voters_rating: Data Type: float. 
-* us_voters_votes: Data Type: float.
-* non_us_voters_rating: Data Type: float.
-* non_us_voters_votes: Data Type: float.
+* us_voters_rating: average rating of US voters. Data Type: float. 
+* us_voters_votes: number of votes from US voters. Data Type: float.
+* non_us_voters_rating: average rating of US non-voters. Data Type: float.
+* non_us_voters_votes: number of votes from non-US voters. Data Type: float.
 
 ## Data Transformation
 ### Renamed Index
@@ -74,7 +74,8 @@ Columns from the Disney Plus Movies/TV Shows dataset and IMDb Movies Extensive d
 
 ## Production Database
 Postgres database was used for this project. Python with SQLAlchemy was used to insert data and query the database. Two data tables were created: 
-1. Table imdb_id TEXT PRIMARY KEY,
+1. Table imdb
+* imdb_id TEXT PRIMARY KEY,
 * weighted_average_vote INT,
 * total_votes INT,
 * votes_10 INT,
@@ -100,6 +101,22 @@ Postgres database was used for this project. Python with SQLAlchemy was used to 
 * released_at DATE,
 * disney_imdb_rating INT,
 * disney_imdb_votes INT
-![Disney Db](Images/disneydb.png?raw=true "Disney Db")
+
+The variables from the disney table were joined with the variables in the imdb table using the imdb_id index.
 
 ## Final Tables or Collections
+In working with this database, the user may encounter a few issues that warrant attention. These are divided into sections based on their respective table below. 
+ 
+### IMDB
+![IMDb Db](Images/imdbdb.png?raw=true "IMDb Db") 
+   * The original dataset used for this table was reportedly updated in the fall of 2020 (approx. September 2020), whereas the Disney dataset was updated in spring 2020 (approx. May 2020). Therefore, the user may notice some inconsistencies between the two datasets. 
+   * As stated previously, IMDb publishes weighted vote averages rather than raw data averages. IMDb does not disclose the method used to calculate these weighted averages. 
+ 
+### Disney
+![Disney Db](Images/disneydb.png?raw=true "Disney Db")
+   * The documentation for the original dataset used is limited. The dataset does not specify if the IMDB ratings included are mean values or weighted. By comparing the data with the information in the IMDB dataset, the ratings appear to be weighted. Users may proceed with caution knowing that this is an assumption.  
+   * The Motion Picture Association (MPA) film ratings for Series, Movies, and Episodes utilize different rating systems. Any analysis linking the IMDB rating with the MPA rating must take this into account. 
+   * The user may notice that there are duplicate titles with differing release dates in this dataset. The user should note that several Disney franchises and productions had re-releases of certain titles. Please refer to this Wikipedia article to review all content that may fall within this category. 
+
+### Joined Table
+![Joined Table](Images/joinedtable.png?raw=true "Joined Table")
