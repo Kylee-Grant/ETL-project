@@ -15,7 +15,7 @@ Two datasets were used for this project: Disney Plus Movies/TV Shows dataset and
 * Current version: Version 3
 * Data Format: csv
  
-#### Data Columns Summary.
+#### Data Columns Summary:
 Below is a list and an explanation of all the columns selected from the Disney Plus Movies/TV Shows dataset:
 * imdb_id: unique Internet Movie Database id for each show. Data Type: object.
 * title: title of each show. These titles are not unique. There may be duplicate titles with different imdb_ids and released_at dates. Data Type: object.
