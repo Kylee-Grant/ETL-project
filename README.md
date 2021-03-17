@@ -74,7 +74,7 @@ Columns from the Disney Plus Movies/TV Shows dataset and IMDb Movies Extensive d
 
 ## Production Database
 Postgres database was used for this project. Python with SQLAlchemy was used to insert data and query the database. Two data tables were created: 
-1. Table imdb
+1. TABLE imdb
 * imdb_id TEXT PRIMARY KEY,
 * weighted_average_vote INT,
 * total_votes INT,
@@ -106,7 +106,7 @@ Postgres database was used for this project. Python with SQLAlchemy was used to 
 The variables from the disney table were joined with the variables in the imdb table using the imdb_id index.
  
 ## Final Tables or Collections
-In working with this database, the user may encounter a few issues that warrant attention. These are divided into sections based on their respective table below. 
+Please see the images below of the final tables. In working with this database, the user may encounter a few issues that warrant attention. These issues are listed below their respective table. 
  
 ### IMDB
 ![IMDb Db](Images/imdbdb.png?raw=true "IMDb Db") 
@@ -117,7 +117,7 @@ In working with this database, the user may encounter a few issues that warrant 
 ![Disney Db](Images/disneydb.png?raw=true "Disney Db")
    * The documentation for the original dataset used is limited. The dataset does not specify if the IMDB ratings included are mean values or weighted. By comparing the data with the information in the IMDB dataset, the ratings appear to be weighted. Users may proceed with caution knowing that this is an assumption.  
    * The Motion Picture Association (MPA) film ratings for Series, Movies, and Episodes utilize different rating systems. Any analysis linking the IMDB rating with the MPA rating must take this into account. 
-   * The user may notice that there are duplicate titles with differing release dates in this dataset. The user should note that several Disney franchises and productions had re-releases of certain titles. Please refer to this Wikipedia article to review all content that may fall within this category. 
+   * The user may notice that there are duplicate titles with differing release dates in this dataset. The user should note that several Disney franchises and productions had re-releases of certain titles. Please refer to this Wikipedia article to review all content that may fall within this category: https://en.wikipedia.org/wiki/List_of_Disney_live-action_remakes_of_animated_films.
 
 ### Joined Table
 ![Joined Table](Images/joinedtable.png?raw=true "Joined Table")
