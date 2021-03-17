@@ -65,7 +65,7 @@ Columns from the Disney Plus Movies/TV Shows dataset and IMDb Movies Extensive d
 
 ### Data Cleaning
 * Data types in the IMDb Movies Extensive dataset were checked and none were changed. 
-* Duplicate imdb_id were dropped in both data sets.
+* Duplicate imdb_id were dropped in from the Disney Plus Movies/TV Shows dataset, whereas all rows with empty columns were dropped in the IMDb Movies Extensive dataset since there were a large number of rows with only a released_at date and no other associated data. 
 * Below were the changes made to the Disney Plus Movies/TV Shows dataset:
     * Commas in imdb_votes were removed and the data type was converted to float.
     * N/A in released_at column were changed to blanks
